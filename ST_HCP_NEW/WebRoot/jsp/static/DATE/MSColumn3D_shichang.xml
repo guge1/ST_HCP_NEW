@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="GBK"?>
+ <graph caption='' subcaption='市场份额%'   xaxisname='' yaxisname='出口数量'  hovercapbg='DEDEBE' hovercapborder='889E6D' rotateNames='0' yAxisMaxValue='50' numdivlines='9'     decimalPrecision='0' showAlternateHGridColor='1' AlternateHGridAlpha='15'  showvalues='1' bgAlpha='35' bgcolor='' showColumnShadow='0' divlinecolor='c5c5c5' divLineAlpha='30'     numberPrefix='' baseFont='宋体' baseFontSize='12'   alternateHGridColor='f8f8f8' showNames='1'  showPercentageInLabel='0'  >
+   <categories font='宋体' fontSize='12' fontColor='000000'> 
+      <category name='Jan-11'  />
+      <category name='Feb-11' />
+      <category name='May-11' />	
+      <category name='Apr-11' />
+      <category name='May-11' />
+      <category name='Jun-11' />
+      <category name='Jul-11'  />
+      <category name='Aug-11' />
+      <category name='Sep-11' />	
+      <category name='Oct-11' />
+      <category name='Nov-11' />
+      <category name='Dec-11' />
+   </categories> 
+   <dataset seriesname='SH' color='AFD8F8'> 
+      <set value='46' />
+      <set value='42' />	
+      <set value='39' />
+      <set value='47' />
+      <set value='30' />
+      <set value='20' />
+      <set value='42' />
+      <set value='41' />
+      <set value='36' />
+      <set value='41' />
+      <set value='34' />
+      <set value='36' />
+   </dataset>
+    <dataset seriesname='SL' color='F6BD0F'>
+      <set value='9' />
+      
+      <set value='6' />
+      <set value='9' />
+      <set value='7' />
+      <set value='5' />
+      <set value='2' />
+      <set value='7' />
+      
+      <set value='6' />
+      <set value='7' />
+      <set value='5' />
+      <set value='5' />
+      <set value='5' />
+   </dataset>
+    <dataset seriesname='LH MS' color='8BBA00' >
+     
+      <set value='15' />
+      <set value='20' />
+      <set value='17' />
+      <set value='13' />
+      <set value='24' />
+      <set value='14' />
+      <set value='14' />
+      <set value='15' />
+      <set value='14' />
+      <set value='15' />
+      <set value='24' />
+      <set value='11' />
+   </dataset>
+    <dataset seriesname='NG MS' color='FF8E46' >
+     <set value='14' />
+      <set value='8' />
+      <set value='12' />
+      <set value='10' />
+      <set value='15' />
+      <set value='24' />
+     <set value='14' />
+      <set value='11' />
+      <set value='10' />
+      <set value='10' />
+      <set value='8' />
+      <set value='8' />
+   </dataset> 
+</graph>

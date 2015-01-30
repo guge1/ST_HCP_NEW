@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<!DOCTYPE taglib PUBLIC
+  "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+  "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>sotower</shortname>
+	<uri>/tags/web-sys</uri>
+  	<tag>
+    	<name>insert</name>
+    	<tagclass>system.tlds.InsertTag</tagclass>
+    	<bodycontent>JSP</bodycontent>
+    	<attribute>
+      		<name>link</name>
+      		<required>true</required>
+    	</attribute>
+    	<attribute>
+      		<name>pageTemplateServiceName</name>
+      		<required>false</required>
+    	</attribute>    	
+  	</tag> 
+    <tag>
+		<name>ui</name>
+		<tagclass>system.tlds.SkinTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+        <attribute>
+			<name>img</name>
+			<required>false</required>
+		</attribute>
+        <attribute>
+			<name>css</name>
+			<required>false</required>
+		</attribute>
+        <attribute>
+			<name>js</name>
+			<required>false</required>
+		</attribute>
+	</tag>
+	
+	<tag>
+    	<name>uipath</name>
+	    <tagclass>system.tlds.SkinPathTag</tagclass>
+    	<bodycontent>JSP</bodycontent>
+	</tag>
+
+</taglib>	
+	

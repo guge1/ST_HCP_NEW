@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	<!--
+
+  链接sql2000
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.microsoft.jdbc.sqlserver.SQLServerDriver">
+		</property>
+		<property name="url"
+			value="jdbc:microsoft:sqlserver://localhost:1433;databaseName=ST_HCP_NEWDATA">
+		</property>
+		<property name="username" value="wxy000242adm"></property>
+		<property name="password" value="6e8q6y5x7c"></property>
+	</bean>
+	--><!--
+  链接sql2005
+  -->
+  <import resource="config/app/sysContext.xml"/>
+  
+  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver">
+		</property>
+		<property name="url"
+			value="jdbc:sqlserver://112.125.51.60:1433; DatabaseName=ST_HCP_NEWDATA">
+		</property>
+		<property name="username" value="ST_HCP_NEWDATA"></property>
+		<property name="password" value="ST_HCP_NEWDATA"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.SQLServerDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				</list>
+		</property>
+	</bean>
+	<bean id="baseDAO" class="system.dao.Impl.BaseDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+
+	<bean id="saveStepClass" class="system.filter.dao.saveStepClass" 	 >
+		<property name="publicDao">
+			<ref bean="publicDAO" />
+		</property> 
+		<property name="sqlDao">
+			<ref bean="sqlDao" />
+		</property>
+		<property name="publicPageDAO">
+			<ref bean="publicPageDAO" />
+		</property>
+		
+		<property name="publicDateDAO">
+			<ref bean="publicDateDAO" />
+		</property>
+	</bean>
+
+	<bean id="userDAO" class="org.login.dao.Impl.UsersDAO" parent="baseDAO"></bean>
+	<bean id="userService" class="org.login.service.Impl.UsersService">
+		<property name="userDAO">
+			<ref bean="userDAO" />
+		</property>
+		<property name="publicDao">
+			<ref bean="publicDAO" />
+		</property>
+	</bean>
+
+	<bean id="login" class="org.login.actions.Login" scope="prototype">
+		<property name="userService">
+			<ref bean="userService" />
+		</property>
+		<property name="publicDao">
+			<ref bean="publicDAO" />
+		</property>
+		<property name="sqlDao">
+			<ref bean="sqlDao" />
+		</property>
+		<property name="publicPageDAO">
+			<ref bean="publicPageDAO" />
+		</property>
+	</bean>
+
+	<bean id="publicDAO" class="system.dao.Impl.PublicDAO" parent="baseDAO"></bean>
+	<bean id="publicSourceDAO" class="system.dao.Impl.PublicSourceDAO"  >
+	 
+	</bean>
+	
+	<bean id="publicPageDAO" class="system.dao.Impl.PublicPageDAO"
+	 >
+		<property name="publicDao">
+			<ref bean="publicDAO" />
+		</property> 
+		<property name="sqlDao">
+			<ref bean="sqlDao" />
+		</property>
+		<property name="publicDateDAO">
+			<ref bean="publicDateDAO" />
+		</property>
+	</bean>
+
+	<bean id="publicDateDAO" class="system.dao.Impl.PublicDateDAO"
+	 >
+		<property name="publicDao">
+			<ref bean="publicDAO" />
+		</property> 
+		<property name="sqlDao">
+			<ref bean="sqlDao" />
+		</property>
+		<property name="publicPageDAO">
+			<ref bean="publicPageDAO" />
+		</property>
+	</bean>
+
+
+	<bean id="sqlDao" class="system.dao.Impl.sqlDao" parent="baseDAO">
+
+		<property name="publicDao">
+			<ref bean="publicDAO" />
+		</property>
+	</bean>
+
+	<bean id="xmlServlet" class="nMarket.actions.xmlServlet"  >
+ 
+	</bean>
+
+	<bean id="StaticAction" class="nMarket.actions.StaticAction">
+		<property name="publicDao">
+			<ref bean="publicDAO" />
+		</property>  
+		<property name="sqlDao">
+			<ref bean="sqlDao" />
+		</property>
+		<property name="publicSourceDAO">
+			<ref bean="publicSourceDAO" />
+		</property>
+		<property name="publicPageDAO">
+			<ref bean="publicPageDAO" />
+		</property>
+		<property name="publicDateDAO">
+			<ref bean="publicDateDAO" />
+		</property>
+	</bean>
+	<bean id="Market" class="nMarket.actions.Market">
+		<property name="publicDao">
+			<ref bean="publicDAO" />
+		</property>
+		<property name="sqlDao">
+			<ref bean="sqlDao" />
+		</property>
+		<property name="publicSourceDAO">
+			<ref bean="publicSourceDAO" />
+		</property>
+		<property name="publicPageDAO">
+			<ref bean="publicPageDAO" />
+		</property>
+		<property name="publicDateDAO">
+			<ref bean="publicDateDAO" />
+		</property>
+	</bean>
+
+	<bean id="DataAction" class="nMarket.actions.DataAction">
+		<property name="publicDao">
+			<ref bean="publicDAO" />
+		</property>
+		<property name="sqlDao">
+			<ref bean="sqlDao" />
+		</property>
+		<property name="publicSourceDAO">
+			<ref bean="publicSourceDAO" />
+		</property>
+		<property name="publicPageDAO">
+			<ref bean="publicPageDAO" />
+		</property>
+		<property name="publicDateDAO">
+			<ref bean="publicDateDAO" />
+		</property>
+	</bean>
+	<bean id="LineAction" class="nMarket.DataCount.LineAction">
+		<property name="publicDao">
+			<ref bean="publicDAO" />
+		</property>
+		<property name="sqlDao">
+			<ref bean="sqlDao" />
+		</property>
+		<property name="publicSourceDAO">
+			<ref bean="publicSourceDAO" />
+		</property>
+		<property name="publicPageDAO">
+			<ref bean="publicPageDAO" />
+		</property>
+		<property name="publicDateDAO">
+			<ref bean="publicDateDAO" />
+		</property>
+	</bean>
+
+	<bean id="Market_sys" class="nMarket.actions.Market_sys">
+		<property name="publicDao">
+			<ref bean="publicDAO" />
+		</property>
+		<property name="sqlDao">
+			<ref bean="sqlDao" />
+		</property>
+		<property name="publicSourceDAO">
+			<ref bean="publicSourceDAO" />
+		</property>
+		<property name="publicPageDAO">
+			<ref bean="publicPageDAO" />
+		</property>
+		<property name="publicDateDAO">
+			<ref bean="publicDateDAO" />
+		</property>
+	</bean>
+	
+	
+	
+	<bean id="CreateSpiderChart_Mark" class="nMarket.FinishChar.Spider.CreateSpiderChart_Mark">
+	 
+		<property name="sqlDao">
+			<ref bean="sqlDao" />
+		</property>
+		<property name="publicSourceDAO">
+			<ref bean="publicSourceDAO" />
+		</property>
+		<property name="publicPageDAO">
+			<ref bean="publicPageDAO" />
+		</property>
+		<property name="publicDateDAO">
+			<ref bean="publicDateDAO" />
+		</property>
+	</bean>
+	 
+	
+	
+	</beans>

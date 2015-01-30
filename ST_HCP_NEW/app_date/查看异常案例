@@ -1,0 +1,21 @@
+  select * from     N_MARKETANALYSIS  s  where 
+
+s.caseid  in(select c.CASEID from N_MARKETCASE c where c.CASETYPE='1' and c.YEAR='2012'  
+  and c.MONTH='1' ) 
+  order by s.MARKETID ;
+ delete   N_MARKETANALYSIS    where 
+
+delete   N_MARKETANALYSIS    where 
+
+ caseid  in(  select  CASEID from ( select COUNT(s.CASEID) CASEIDcount,s.CASEID from     N_MARKETANALYSIS  s  where 
+
+s.caseid  in(select c.CASEID from N_MARKETCASE c   ) 
+  group by s.CASEID)a  where CASEIDcount<12 
+   ) ;
+    delete   N_MARKETCASE    where 
+
+ caseid  in(  select  CAST( CASEID  as int)CASEID from ( select COUNT(s.CASEID) CASEIDcount,s.CASEID from     N_MARKETANALYSIS  s  where 
+
+s.caseid  in(select c.CASEID from N_MARKETCASE c   ) 
+  group by s.CASEID)a  where CASEIDcount<12 
+   ) 

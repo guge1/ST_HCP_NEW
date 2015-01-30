@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="GBK"?>
+ <graph caption='' subcaption=''   xaxisname='' yaxisname='出口数量'  hovercapbg='DEDEBE' hovercapborder='889E6D' rotateNames='0' yAxisMaxValue='100' numdivlines='9'     decimalPrecision='0' showAlternateHGridColor='1' AlternateHGridAlpha='30'  showvalues='1' bgAlpha='70' bgcolor='' showColumnShadow='0' divlinecolor='c5c5c5' divLineAlpha='60'     numberPrefix='' baseFont='宋体' baseFontSize='12'   alternateHGridColor='f8f8f8' showNames='1'  showPercentageInLabel='0'  >
+   <categories font='宋体' fontSize='12' fontColor='9D080D'> 
+      <category name='Jan-09'  />
+      <category name='Mar-09' />
+      <category name='May-09' />	
+      <category name='Jul-09' />
+      <category name='Sep-09' />
+      <category name='Nov-09' />
+      <category name='Jan-10'  />
+      <category name='Mar-10' />  
+   </categories> 
+   <dataset seriesname='张海鑫' color='AFD8F8'> 
+      <set value='132320' />
+      <set value='124326' />
+      <set value='124339' />
+      <set value='120008' />
+      <set value='134343' />
+      <set value='124326' />
+      <set value='124339' />
+      <set value='120008' />
+   </dataset>
+    <dataset seriesname='王胜理' color='F6BD0F'>
+      <set value='102320' />
+      <set value='98998' />
+      <set value='79343' />
+      <set value='73124' />
+      <set value='71987' />
+      <set value='80223' />
+      <set value='102454' />
+      <set value='99454' />
+   </dataset>
+    <dataset seriesname='刘文娟' color='8BBA00' >
+      <set value='120320' />
+      <set value='124312' />
+      <set value='128333' />
+      <set value='136434' />
+      <set value='119999' />
+      <set value='145343' />
+      <set value='130999' />
+      <set value='130999' />
+   </dataset>
+    <dataset seriesname='邓建' color='FF8E46' >
+      <set value='112320' />
+      <set value='115900' />
+      <set value='113234' />
+      <set value='126111' />
+      <set value='112222' />
+      <set value='108010' />
+      <set value='90078' />
+      <set value='110078' />
+   </dataset>
+    <dataset seriesname='刘瑞华' color='008E8E' >
+      <set value='86320' />
+      <set value='91000' />
+      <set value='93800' />
+      <set value='95085' />
+      <set value='100867' />
+      <set value='111634' />
+      <set value='110000' />
+      <set value='95000' />
+   </dataset>
+    <dataset seriesname='何文琪' color='D64646' >
+      <set value='60000' />
+      <set value='76454' />
+      <set value='76528' />
+      <set value='79026' />
+      <set value='88010' />
+      <set value='70510' />
+      <set value='72510' />
+      <set value='74510' />
+   </dataset>
+</graph>

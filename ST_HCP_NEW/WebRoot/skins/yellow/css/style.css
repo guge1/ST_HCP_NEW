@@ -1,0 +1,137 @@
+
+body{font-size:12px; height: 100%;width: 100%;}
+body,div,ul,li,h1,h2,h3,h4,img,span,a,form,input,p,marquee,dl,dd,dt{margin:0;padding:0;font-size:12px;}
+ul{list-style:none;}
+a{text-decoration:none;display:inline-block;}
+a:hover{text-decoration:underline;}
+a img{display:inline-block;border:none;}
+.l{float:left;}
+.r{float:right;}
+.c{clear:both;}
+.dis{display:block;}
+.undis{display:none;}
+
+
+
+/*main*/
+#top{width:100%;height:33px;background:url(../images/top.jpg) repeat-x;margin-bottom:70px;}
+#main{width:960px;margin:0 auto;}
+#logo{margin-bottom:20px;margin-left:565px;}
+.login{width:361px;height:250px;background:#FDAF17;}
+.login h2{width:361px;height:33px;line-height:33px;color:#fff;font-size:14px;font-family:'微软雅黑';text-align:center;}
+.user{width:308px;height:215px;background:url(../images/login_bj.jpg) no-repeat;margin:0 auto;padding:0 25px;}
+.user h3{height:40px;line-height:40px;background:url(../images/login_line.jpg) no-repeat bottom;padding-left:30px;font-weight:normal;font-size:14px;font-family:'微软雅黑'}
+.user h3 span{color:#067A9F;}
+.input_style{margin-top:35px;}
+.input_style label{font-size:14px;font-weight:bold;display:inline-block;width:60px;text-align:right;}
+.input_style  input{background:none;border:none;width:157px;height:24px;line-height:24px;border:1px solid #F6B64C;}
+.password{margin-top:20px;margin-left:184px;}
+.password a{color:#333;text-decoration:underline;}
+
+.bottom{border-bottom:22px solid #887360;margin-top:125px;height:30px;line-height:30px;}
+.bottom a{color:#AAB3B8;font-size:14px;font-weight:bold;}
+
+
+
+
+/*平津区域信息*/
+.header{width:981px;height:64px;background:url(../images/border.jpg) no-repeat bottom;margin:0 auto;position:relative;}
+.header p{position:absolute;top:20px;left:0;font-size:22px;color:#fcae18;font-family:'微软雅黑';}
+.header a{position:absolute;top:10px;left:768px;}
+
+
+.content{width:981px;margin:0 auto;}
+.time{height:24px;line-height:24px;background:url(../images/time_bj.jpg) repeat-x;margin-top:-27px;
+  text-align:right;color:#913528;}
+#con_article_1{width:981px;height:623px;background:url(../images/content_bj.jpg) repeat-y;position:relative;}
+.article2{
+ margin-top:7px; color:#913528;
+ top:-2px;left:0px; width:981px;height:24px;
+}
+.cssz{width:579px;}
+.selectli1{font-weight:bold;}
+
+/*按钮*/
+.button{margin-left:16px; position:absolute;top:15px;width:981px;height:34px;text-align:center;}
+ 
+
+
+.menu_td     {background:url(../images/button_bg2.png) no-repeat;width:126px;height:37px;line-height:37px;text-align:center;font-size:14px;color:#FFFFFF;text-decoration:none;margin-left:4px;}
+.menu_selected{background:url(../images/button_bg.png) no-repeat;width:126px;height:37px;line-height:37px;text-align:center;font-size:14px;color:#FFFFFF;text-decoration:none;margin-left:4px;}
+.menu_click   {background:url(../images/button_bg.png) no-repeat;width:126px;height:37px;line-height:37px;text-align:center;font-size:14px;color:#FFFFFF;text-decoration:none;margin-left:4px;}
+
+
+
+
+
+
+.shezhi{height:32px;background:url(../images/canshubg.jpg);border:1px solid #f8c069;border-radius: 2px 2px 2px 2px;margin-top:15px;line-height:32px;}
+.canshu{display:block;width:136px;font-size:16px;color:#FB5815;text-align:center;font-weight:bold;}
+.list{display:block;width:300px;padding-top:2px;margin-left:-15px;}
+.list a{text-align:center;padding-left:30px;padding-right:12px;color:#000000;text-decoration:none;}
+
+/*信息内容*/
+
+.xinxi{height:550px;background:url(../images/xinxibg.jpg) repeat-y;border:1px solid #f8c069;border-radius: 2px 2px 2px 2px;margin-top:3px;}
+.xinxi p{margin-bottom:10px;line-height:18px;}
+.xinxi_title{font-size:16px;color:#FB5815;font-weight:bold;margin-top:20px;margin-left:30px;margin-right:30px;border-bottom:1px solid #FCAE18;padding-bottom:5px;}
+.xinxi_content{font-size:12px;margin-left:30px;margin-top:20px;width:520px;overflow-y:scroll;padding-right:20px;height:460px;}
+.xinxi_contenttitle{color:#963129;margin-bottom:10px;}
+
+.quyu{width:402px;height:621px;background:url(../images/pic2.jpg) no-repeat bottom;}
+
+
+
+/*区域代表描述*/
+#con_article_2{width:979px;height:621px;background:#FFFFFF;position:relative;border:1px solid #F8C069;}
+#con_article_3{width:979px;height:621px;position:relative;border:1px solid #F8C069;}
+.miaoshu_title{color:#FB5815;font-size:16px;font-weight:bold;padding-top:65px;padding-left:55px;}
+.miaohu_bg{ background:url(../images/quyubg.jpg) no-repeat;width:877px;height:375px;margin-left:55px;}
+.miaohu_bg a{width:280px;text-align:center;margin-left:10px;height:200px;line-height:200px;color:#963127;font-size:16px;font-weight:bold;text-decoration:none;}
+
+/*销售数据*/
+.shuju{width:792px;height:520px;border:1px solid #FBD395;margin:0 auto;background:#FFFFFF;}
+.daibiao{background:url(../images/shuju_bg1.jpg) repeat-x;border:1px solid #EB9C25; width:790px;height:23px;margin-left:1px;margin-top:1px; }
+.baizi{text-align:center;line-height:23px;color:#FFFFFF; font-weight:bold; width:765px;}
+.close{width:24px;height:23px;background:none;border:none;background:url(../images/error.jpg)}
+.xianshineirong{width:793px;background:#FFFFFF;}
+.neironglist{width:50px;height:485px;border:1px solid #E78F09;margin-left:1px;margin-top:1px;background:#F6B64A;}
+.neironglist a{width:20px;display:block;font-size:14px;font-weight:bold;margin-left:14px;padding-top:15px;padding-bottom:15px;padding-right:7px;padding-left:7px; text-decoration:none;color:#1C95C4;background:#FFFFFF;text-align:center;margin-bottom:3px;border:1px solid #A5A5A5;border-right:none;}
+.neironglist a.hover,.neironglist a:hover{color:#EB8E02;padding-right:9px;}
+.xiaoshoutu{font-size:14px;font-weight:bold;padding-top:25px;padding-bottom:10px;margin-left:25px;border-bottom:1px solid #F6B64C;}
+.padding-right10{margin-right:25px;}
+.qushi{font-size:12px;font-weight:bold;padding-top:30px;text-align:center;padding-bottom:10px;}
+.qushitu{margin:0 auto;}
+.qushitu_1{margin-left:35px;}
+.zhxjianjie{margin-top:25px;}
+.zhxpeople{margin-left:25px;margin-right:40px;}
+.jianjie{margin-right:10px;}
+.zhxname{font-size:14px;font-weight:bold;color:#943426;}
+.xiangxijianjie{font-size:12px;font-weight:bold;color:#EB8F00;margin-top:10px;}
+
+
+/*版本*/
+.footer{height:23px;background:#897260;width:960px;margin:0 auto;margin-top:20px;line-height:23px;color:#FFFFFF;padding-left:10px;padding-right:10px;}
+
+
+.white_content {
+
+ display: none;
+ position: absolute;
+ top: 10%;
+ left: 10%;
+ z-index:1002;
+}
+.black_overlay {
+ display: none;
+ position: absolute;
+ top: 0%;
+ left: 0%;
+ width: 100%;
+ height: 100%;
+ background-color:#000000;
+ z-index:1001;
+ -moz-opacity: 0.5;
+ opacity:.50;
+ filter: alpha(opacity=50);
+}

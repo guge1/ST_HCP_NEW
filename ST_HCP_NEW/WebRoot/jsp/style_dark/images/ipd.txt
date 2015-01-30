@@ -1,0 +1,10 @@
+1.路径web/head.aspx
+2.脚本函数
+function clickipd(url){
+            var strResult;
+		    strResult = g_OpenModalWindow(url,600,500);				
+		    return false;
+        }
+        
+D:\ITSM\App_Themes\style_dark\images 存放地质
+<img src="../../App_Themes/style_dark/images/ipd.gif" onclick="clickipd('http://10.142.163.238/ipd/OEMLogin.asp?uid=admin&pwd=admin&lng=Simplified')" alt="接入控制" style="cursor:pointer;" />

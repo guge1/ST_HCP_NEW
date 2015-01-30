@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="GBK"?>
+ <graph caption='' PYAxisName='毛收入' SYAxisName='利润' 
+ numberPrefix='' showvalues='0'  numDivLines='4' formatNumberScale='0' decimalPrecision='0' 
+anchorSides='10' anchorRadius='3' anchorBorderColor='009900'  baseFont='宋体' baseFontSize='12'>
+
+<categories>
+	<category name='张海鑫' />
+	<category name='王胜理' />
+	<category name='刘文娟' />
+	<category name='邓建' />
+	<category name='刘瑞华' />
+	<category name='何文琪' />
+</categories>
+
+<dataset seriesName='销售金额  NTS' color='AFD8F8' showValues='0'>
+<set value='25601.34' />
+<set value='20148.82' />
+<set value='17372.76' />
+<set value='35407.15' />
+<set value='38105.68' />
+<set value='37105.68' />
+</dataset>
+<dataset seriesName='销售增长 NetGrowth' color='F6BD0F' showValues='0' >
+<set value='57401.85' /> 
+<set value='41941.19' />
+<set value='45263.37' />
+<set value='117320.16' />
+<set value='114845.27' />
+<set value='134845.27' />
+</dataset>
+<dataset seriesName='达标率 ACH %' color='8BBA00' showValues='0' parentYAxis='S' >
+<set value='45' />
+<set value='44' />
+<set value='42' />
+<set value='77' />
+<set value='92' />
+</dataset>
+</graph>

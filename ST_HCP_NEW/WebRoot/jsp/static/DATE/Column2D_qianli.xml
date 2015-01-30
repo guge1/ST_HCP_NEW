@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK"?>
+<graph caption='潜力' subCaption='' xAxisName='' yAxisName='潜力'  
+ showvalues='1' bgAlpha='70' bgcolor='' showColumnShadow='0' divlinecolor='c5c5c5' 
+ divLineAlpha='60'    numberPrefix=''  baseFont='宋体'
+  baseFontSize='12'  showAlternateHGridColor='1' alternateHGridColor='f8f8f8' showNames='1'
+    showPercentageInLabel='0'  decimalPrecision='0' >
+	<set name='张海鑫' value='160' color='AFD8F8' />
+	<set name='王胜理' value='213' color='F6BD0F' />
+	<set name='刘文娟' value='150' color='8BBA00' />
+	<set name='邓建' value='104' color='FF8E46'/>
+	<set name='刘瑞华' value='16' color='008E8E'/>
+	<set name='何文琪' value='318' color='D64646'/> 
+</graph>

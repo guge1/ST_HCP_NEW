@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale = 1.0" />
+<meta name="author" content="FamousThemes" />
+<meta name="description" content="Get in the spotlight" />
+<meta name="keywords" content="premium css templates, premium wordpress themes, famous themes, themeforest" />
+<title>My mobile page V2</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+	$(function() {
+		$('#activator').click(function(){
+				$('#box').animate({'top':'65px'},500);
+		});
+		$('#boxclose').click(function(){
+				$('#box').animate({'top':'-400px'},500);
+		});
+		$('#activator_share').click(function(){
+				$('#box_share').animate({'top':'65px'},500);
+		});
+		$('#boxclose_share').click(function(){
+				$('#box_share').animate({'top':'-400px'},500);
+		});
+
+	});
+	$(document).ready(function(){
+	$(".toggle_container").hide(); 
+	$(".trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("slow");
+		return false;
+	});
+	
+	});
+</script>
+<!-- Hide Mobiles Browser Navigation Bar -->
+<script type="text/javascript">
+	window.addEventListener("load",function() {
+	// Set a timeout...
+	setTimeout(function(){
+	// Hide the address bar!
+	window.scrollTo(0, 1);
+	}, 0);
+	});
+</script>
+</head>
+
+<body>
+<div id="main_container">
+	<div class="header">
+    <a href="index.html" class="left_bt">首页</a>
+    <span>作品展示</span>
+    <a href="#" class="right_bt" id="activator"><img src="images/search.png" alt="" title="" border="0" /></a>
+    </div>
+    
+        <div class="box" id="box">
+        	<div class="box_content">
+            
+            	<div class="box_content_tab">
+                搜索
+                </div>
+                
+                <div class="box_content_center">
+                <div class="form_content">
+                <form>
+                <input type="text" class="form_input_box" />
+                <a class="boxclose" id="boxclose">关闭</a>
+                <input type="submit" class="form_submit" value="提交" />
+                </form>
+                </div> 
+                
+                <div class="clear"></div>
+                </div>
+            
+           </div>
+        </div>
+
+        <div class="box" id="box_share">
+        	<div class="box_content">
+            	<div class="box_content_tab">
+                分享
+                </div>
+                <div class="box_content_center">
+                
+                        <div class="social_share">
+                        <ul>
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_tsina"></a>
+<a class="bds_qzone"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=12770" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+                        </ul>
+                        </div>
+            
+                <a class="boxclose_right" id="boxclose_share">关闭</a>
+                <div class="clear"></div>
+                
+                </div>
+           </div>
+        </div>
+        
+	<div class="content">
+    	
+    	<div class="corner_wrap">
+
+            
+            <div class="entry">
+            <h3>作品标题 01</h3>
+            <img src="images/pic.jpg" alt="" title="" border="0" />
+            <p>客户为先
+尊重所有客户，随时随地维护富图视觉形象； 
+微笑面对投诉，积极主动的为客户解决问题； 
+与客户交流过程中，即使不是自己的责任，也不推诿； 
+站在客户的立场思考问题，在坚持原则的基础上，最终达到客户和公司的满意。  
+            </p>             
+            </div>
+        </div>
+   		<div class="shadow_wrap"></div>
+        
+    	<div class="corner_wrap">
+            <div class="entry">
+            <h3>作品标题 02</h3>
+            
+            <p>  
+            <img src="images/gallery/thumbs/7.jpg" alt="" title="" class="left_pic" />          
+            作品描述enim ad minim veniam, quis nostrud labore et Ut enim ad.
+            </p>   
+            <div class="clear"></div>           
+            </div>                           
+        </div>
+   		<div class="shadow_wrap"></div>
+        
+    	<div class="corner_wrap">
+            <div class="entry">
+            <h3>作品标题 03</h3>
+            
+            <p>  
+            <img src="images/gallery/thumbs/3.jpg" alt="" title="" class="left_pic" />          
+            作品描述enim ad minim veniam, quis nostrud labore et Ut enim ad.
+            </p>
+            <div class="clear"></div>               
+            </div>                           
+        </div>
+   		<div class="shadow_wrap"></div>
+        
+    	<div class="corner_wrap">
+            <div class="entry">
+            <h3>作品标题 04</h3>
+            
+            <p>  
+            <img src="images/gallery/thumbs/2.jpg" alt="" title="" class="left_pic" />          
+            作品描述enim ad minim veniam, quis nostrud labore et Ut enim ad.
+            </p> 
+            <div class="clear"></div>              
+            </div>                           
+        </div>
+   		<div class="shadow_wrap"></div>
+        
+        
+        
+        <a href="#" class="left_nav">上页</a>
+        
+        <a href="#" class="right_nav">下页</a>
+
+    </div>
+
+
+</div>
+<div id="footer">
+<a href="#" class="left_bt" id="activator_share">分享</a>
+<span>17素材网  www.17sucai.com  分享社区</span>
+<a onclick="jQuery('html, body').animate( { scrollTop: 0 }, 'slow' );"  href="javascript:void(0);" title="Go on top" class="right_bt"><img src="images/top.png" alt="" title="" border="0" /></a>
+</div>
+</body>
+</html>

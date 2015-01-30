@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale = 1.0" />
+<meta name="author" content="FamousThemes" />
+<meta name="description" content="Get in the spotlight" />
+<meta name="keywords" content="premium css templates, premium wordpress themes, famous themes, themeforest" />
+<title>My mobile page V2</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+	$(function() {
+		$('#activator').click(function(){
+				$('#box').animate({'top':'65px'},500);
+		});
+		$('#boxclose').click(function(){
+				$('#box').animate({'top':'-400px'},500);
+		});
+		$('#activator_share').click(function(){
+				$('#box_share').animate({'top':'65px'},500);
+		});
+		$('#boxclose_share').click(function(){
+				$('#box_share').animate({'top':'-400px'},500);
+		});
+
+	});
+	$(document).ready(function(){
+	
+	//Hide (Collapse) the toggle containers on load
+	$(".toggle_container").hide(); 
+	
+	//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+	$(".trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("slow");
+		return false; //Prevent the browser jump to the link anchor
+	});
+	
+	});
+</script>
+<script type="text/javascript" src="js/photoslide.js"></script>
+<!-- Hide Mobiles Browser Navigation Bar -->
+<script type="text/javascript">
+	window.addEventListener("load",function() {
+	// Set a timeout...
+	setTimeout(function(){
+	// Hide the address bar!
+	window.scrollTo(0, 1);
+	}, 0);
+	});
+</script>
+</head>
+
+<body>
+<div id="main_container">
+	<div class="header">
+    <a href="index.html" class="left_bt">首页</a>
+    <span>图片展示</span>
+    <a href="#" class="right_bt" id="activator"><img src="images/search.png" alt="" title="" border="0" /></a>
+    </div>
+    
+        <div class="box" id="box">
+        	<div class="box_content">
+            
+            	<div class="box_content_tab">
+                搜索
+                </div>
+                
+                <div class="box_content_center">
+                <div class="form_content">
+                <form>
+                <input type="text" class="form_input_box" />
+                <a class="boxclose" id="boxclose">关闭</a>
+                <input type="submit" class="form_submit" value="提交" />
+                </form>
+                </div> 
+                
+                <div class="clear"></div>
+                </div>
+            
+           </div>
+        </div>
+
+        <div class="box" id="box_share">
+        	<div class="box_content">
+            	<div class="box_content_tab">
+                分享
+                </div>
+                <div class="box_content_center">
+                
+                        <div class="social_share">
+                        <ul>
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_tsina"></a>
+<a class="bds_qzone"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=12770" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+                        </ul>
+                        </div>
+            
+                <a class="boxclose_right" id="boxclose_share">关闭</a>
+                <div class="clear"></div>
+                
+                </div>
+           </div>
+        </div>
+        
+	<div class="content">
+    	
+
+            
+        <span id="loading">Loading Image</span>
+
+        <div id="thumbsWrapper">
+            <div id="content">
+                <img src="images/gallery/thumbs/1.jpg" alt="images/gallery/1.jpg" title="图片标题 01"/>
+                <img src="images/gallery/thumbs/2.jpg" alt="images/gallery/2.jpg" title="图片标题 02"/>
+                <img src="images/gallery/thumbs/7.jpg" alt="images/gallery/7.jpg" title="图片标题 03"/>
+                <img src="images/gallery/thumbs/4.jpg" alt="images/gallery/4.jpg" title="图片标题 04"/>
+                <img src="images/gallery/thumbs/5.jpg" alt="images/gallery/5.jpg" title="图片标题 05"/>
+                <img src="images/gallery/thumbs/6.jpg" alt="images/gallery/6.jpg" title="图片标题 06"/>
+                <img src="images/gallery/thumbs/7.jpg" alt="images/gallery/7.jpg" title="图片标题 07"/>
+                <img src="images/gallery/thumbs/2.jpg" alt="images/gallery/2.jpg" title="图片标题 08"/>
+                <img src="images/gallery/thumbs/3.jpg" alt="images/gallery/3.jpg" title="图片标题 09"/>
+                <img src="images/gallery/thumbs/5.jpg" alt="images/gallery/5.jpg" title="图片标题 10"/>
+                <img src="images/gallery/thumbs/4.jpg" alt="images/gallery/4.jpg" title="图片标题 11"/>
+                <img src="images/gallery/thumbs/6.jpg" alt="images/gallery/6.jpg" title="图片标题 12"/>
+            <div class="placeholder"></div>
+            </div>
+        </div>
+        <div id="panel">
+            <div id="wrapper">
+                <a id="prev"></a>
+                <a id="next"></a>
+            </div>
+        </div> 
+    
+    </div><!-- end of content-->
+
+
+</div>
+<div id="footer">
+<a href="#" class="left_bt" id="activator_share">分享</a>
+<a onclick="jQuery('html, body').animate( { scrollTop: 0 }, 'slow' );"  href="javascript:void(0);" title="Go on top" class="right_bt"><img src="images/top.png" alt="" title="" border="0" /></a>
+</div>	
+</body>
+</html>

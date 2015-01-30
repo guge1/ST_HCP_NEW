@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GBK"?>
+ <graph caption='' subcaption='医院销售趋势'   xaxisname='' yaxisname='出口数量'  hovercapbg='DEDEBE' hovercapborder='889E6D' rotateNames='0' yAxisMaxValue='100' numdivlines='9'     decimalPrecision='0' showAlternateHGridColor='1' AlternateHGridAlpha='30'  showvalues='1' bgAlpha='70' bgcolor='' showColumnShadow='0' divlinecolor='c5c5c5' divLineAlpha='60'     numberPrefix='' baseFont='宋体' baseFontSize='12'   alternateHGridColor='f8f8f8' showNames='1'  showPercentageInLabel='0'  >
+   <categories font='宋体' fontSize='12' fontColor='9D080D'> 
+      <category name='Jan-09'  />
+      <category name='Mar-09' />
+      <category name='May-09' />	
+      <category name='Jul-09' />
+      
+      <category name='Sep-09' />
+      <category name='Nov-09' />
+      <category name='Jan-10'  />
+      <category name='Mar-10' />  
+   </categories> 
+   <dataset seriesname='张海鑫' color='AFD8F8'> 
+      <set value='132320' />
+      <set value='124326' />
+      <set value='124339' />
+      <set value='120008' />
+      <set value='134343' />
+      <set value='124326' />
+      <set value='124339' />
+      <set value='120008' />
+   </dataset>
+   
+</graph>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	<!--
+  系统配置相关
+	-->
+	
+	<!--<bean id="connectionPool" class="system.ConnPool.ConnectionPool">
+	 
+	</bean>
+
+ <bean id="skinutils" class="system.tlds.template.Utils.SkinUtils">
+	 
+	</bean>
+	 
+	
+	
+-->
+
+
+</beans>

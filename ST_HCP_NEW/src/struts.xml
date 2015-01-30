@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <include file="struts-default.xml"/>
+    <include file="chart-struts.xml"/>
+    
+      <constant name="struts.devMode" value="true"/> 
+   
+   <package name="common" extends="struts-default">
+		<interceptors> 
+          	<interceptor name="securityInterceptor" class="org.login.actions.SecurityInterceptor" /> 
+        	<interceptor-stack name="testStack">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="securityInterceptor" /> 
+			</interceptor-stack>
+        </interceptors> 
+		<default-interceptor-ref name="testStack" /> 
+		<global-results>
+		    <result name="login">/jsp/login/login.jsp</result> 
+		</global-results>
+    </package>  
+          <!--   
+            关于extends继承jfreechart-default这点请大家注意  
+            因为在struts-default这个包里并没有result-type为chart的  
+            chart 定义在前面我们导入的struts2-jfreechart-plugin-2.1.6.jar  
+            下面的struts-plugin.xml文件中  
+        -->  
+        <package name="jfreechart" extends="jfreechart-default" namespace="/jCuckoo" >  
+            <action name="getPaoPao" class="JfreeCharAction"  method="getPaoPao">  
+                 <result type="chart">
+				    <param name="width">600</param>
+				    <param name="height">450</param>
+  				 </result>
+            </action>  
+        </package>  
+     
+    
+      
+    
+    <package name="struts2" extends="struts-default">
+    	<!--   系统框架页面  -->
+    	<action name="logon" class="login">
+    		<result name="success">/jsp/web/main.jsp</result>
+    		<result name="fail">/jsp/login/login.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	
+    	<action name="userExit" class="login" method="userExit">
+    		<result name="success">/jsp/login/login.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<action name="save" class="login" method="save">
+    		<result name="success">/success.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<action name="update" class="login" method="update">
+    		<result name="success">/success.jsp</result>
+    		<result name="update">/update.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<action name="delete" class="login" method="delete">
+    		<result name="success">/success.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<action name="show" class="login" method="findAllUsers">
+    		<result name="success">/list.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<action name="left" class="login" method="returnVoid">
+    		<result name="default">/jsp/web/left.jsp</result>
+    	</action>
+    	<action name="top" class="login" method="returnVoid">
+    		<result  name="default">/jsp/web/top.jsp</result>
+    	</action>
+    	<action name="main" class="login" method="returnVoid">
+    		<result name="default">/jsp/web/main.jsp</result>
+    	</action>
+    	
+    	<action name="down" class="login" method="returnVoid">
+    		<result name="default">/jsp/web/down.jsp</result>
+    	</action>
+    	
+    	<!--   统计数据  -->
+    	<action name="queryDclStatic" class="StaticAction" method="queryDclStatic">
+    		<result name="default">/jsp/static/queryDclStatic.jsp</result>
+    	</action>
+    	<!--   表二：客户优先顺序排序  -->
+    	<action name="queryOrderStatic" class="StaticAction" method="queryOrderStatic">
+    		<result name="default">/jsp/static/queryOrderStatic.jsp</result>
+    	</action>
+    	<!--   表三 优先顺序前6名的客户资源分配及达成  -->
+    	<action name="queryYouStatic" class="StaticAction" method="queryYouStatic">
+    		<result name="default">/jsp/static/queryYouStatic.jsp</result>
+    	</action>
+    	<!--   表四：单个客户资源分配分析（数量）  -->
+    	<action name="querySingleStatic" class="StaticAction" method="querySingleStatic">
+    		<result name="default">/jsp/static/querySingleStatic.jsp</result>
+    	</action>
+    	
+    	
+    	
+    	<!--   基础数据  -->
+    	<action name="queryCase" class="DataAction" method="queryCase">
+    		<result name="default">/jsp/web/tab/caseList.jsp</result>
+    	</action>
+    	
+    	<action name="insertCase" class="DataAction" method="insertCase">
+    		<result name="default">/message.jsp</result>
+    	</action>
+    	<action name="editCase" class="DataAction" method="editCase">
+    		<result name="default">/jsp/web/tab/editCase.jsp</result>
+    	</action>
+    	<action name="deleteCase" class="DataAction" method="deleteCase">
+    		<result name="default">/message.jsp</result>
+    	</action>
+    	<action name="saveCase" class="DataAction" method="saveCase">
+    		<result name="default">/message.jsp</result>
+    	</action>
+    	
+    	<action name="getMarketInfo_Body" class="DataAction" method="getMarketInfo_Body">
+    		<result name="default">/jsp/web/userBody.jsp</result>
+    	</action>
+    	
+    	<action name="updateCase" class="DataAction" method="updateCase">
+    		<result name="default">/message.jsp</result>
+    	</action>
+    	<!--   个人有效性  -->
+    	<action name="youXiaoXing_person" class="DataAction" method="youXiaoXing_person">
+    		<result name="default">/jsp/Market/youXiaoXing_person.jsp</result>
+    	</action>
+    	<!--   销售数据  -->
+    	<action name="queryXiaoShouShuJu" class="DataAction" method="queryXiaoShouShuJu">
+    		 
+    	</action>
+    	
+    	<!--   销售预估数据  -->
+    	<action name="queryXiaoShouYuGu" class="DataAction" method="queryXiaoShouYuGu">
+    		 
+    	</action>
+    	 <action name="getPaoPao1" class="DataAction"  method="getPaoPao1">  
+                <result name="success" >/error.jsp   
+                </result>  
+            </action>  
+    	
+    	<!--  线性回归公式计算销售预估数据  -->
+    	<action name="getLineResult" class="LineAction" method="getLineResult">
+    		 
+    	</action>
+    	<!--   销售分析数据  -->
+    	<action name="querySell_analysis" class="DataAction" method="querySell_analysis">
+    	</action>
+    	<!--   销售分析数据  -->
+    	<action name="queryXiaoShouJieGuoStatic" class="DataAction" method="queryXiaoShouJieGuoStatic">
+    	</action>
+    	
+    	<!--   达成率-->
+    	<action name="queryDaChengLv" class="DataAction" method="queryDaChengLv">
+    	</action>
+    	<!--   销售潜力数据  -->
+    	<action name="queryQianLiStatic" class="DataAction" method="queryQianLiStatic">
+    	</action>
+    	
+    	<!--   总体分析泡泡图  -->
+    	<action name="getZongTiFenXiPaoPao" class="DataAction" method="getZongTiFenXiPaoPao">
+    	</action>
+    	
+    	
+    	<!--   销售代表数据  -->
+    	<action name="getMarketInfo" class="DataAction" method="getMarketInfo">
+    		<result name="default">/jsp/Market/seller.jsp</result>
+    	</action>
+    	
+    	
+    	<!--   销售代表信息数据  -->
+    	<action name="getMarketInfo_1" class="DataAction" method="getMarketInfo_1">
+    		<result name="default">/jsp/static/sell_date.jsp</result>
+    	</action>
+    	
+    	
+    	<!--   有效性分析  -->
+    	<action name="staticYouXiaoXing_FenXi" class="DataAction" method="staticYouXiaoXing_FenXi">
+    		<result name="default">/jsp/static/youXiaoXing_FenXi.jsp</result>
+    	</action>
+    	
+    	<!--  总体分析  -->
+    	<action name="staticZongTiFenXi_Tu" class="DataAction" method="staticZongTiFenXi_Tu">
+    		<result name="default">/jsp/static/zongTiFenXi_Tu.jsp</result>
+    	</action>
+    	<!--  总体分析排序保存  -->
+    	<action name="saveZonti_FenXi_Tu" class="DataAction" method="saveZonti_FenXi_Tu">
+    		<result name="default">/message.jsp</result>
+    	</action>
+    	<!--   market  -->
+    
+    	<action name="queryLeft" class="Market" method="queryLeft">
+    		<result name="default">/jsp/web/left.jsp</result>
+    	</action> 
+    
+    	<action name="queryZiyuanInfo" class="Market" method="queryZiYuan">
+    		<result name="default">/jsp\Market\ziyuan.jsp</result>
+    	</action> 
+    	<action name="saveSource" class="Market" method="saveSource">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	<action name="queryZhiBiaoInfo" class="Market" method="queryZhiBiao">
+    		<result name="default">/jsp\Market\zhiBiao_canShu.jsp</result>
+    	</action> 
+    	<action name="saveZhiBiao" class="Market" method="saveZhiBiao">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	<!--   设置行动计划 -->
+    	<action name="getXingDongJiHuaList" class="Market" method="getXingDongJiHuaList">
+    		<result name="default">/jsp\Market\XingDongList.jsp</result>
+    	</action> 
+    	
+    	<!--   Market_sys  -->
+    	<!--   总体分析  -->
+    	<action name="queryZongTi_FenXi" class="Market_sys" method="queryZongTi_FenXi">
+    		<result name="default">/jsp/Market/zongTiFenXi.jsp</result>
+    	</action>
+    	
+    	<action name="saveZongTi_FenXi" class="Market_sys" method="saveZongTi_FenXi">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	
+    	<!--   潜力 -->
+    	<action name="editMarketSize" class="Market_sys" method="editMarketSize">
+    		<result name="default">/jsp/Market/editMarketSize.jsp</result>
+    	</action>
+    	
+    	<action name="saveMarketSize" class="Market_sys" method="saveMarketSize">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	<!--   标准值设置 -->
+    	<action name="editBiaoZhun" class="Market_sys" method="editBiaoZhun">
+    		<result name="default">/jsp/Market/editBiaoZhun.jsp</result>
+    	</action>
+    	
+    	<action name="saveEditBiaoZhun" class="Market_sys" method="saveEditBiaoZhun">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	
+    	<!--   历史数据修改 -->
+    	<action name="editHostory" class="Market_sys" method="editHostory">
+    		<result name="default">/jsp/Market/editHostory.jsp</result>
+    	</action>
+    	
+    	<action name="saveEditHostory" class="Market_sys" method="saveEditHostory">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	<!--   倾向性分析  -->
+    	<action name="queryJieGuo_FenXi" class="Market_sys" method="queryJieGuo_FenXi">
+    		<result name="default">/jsp/Market/jieGuo_FenXi.jsp</result>
+    	</action>
+    	
+    	<action name="saveJieGuo_FenXi" class="Market_sys" method="saveJieGuo_FenXi">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	
+    	<!--   潜力分析  -->
+    	<action name="queryQianLi_FenXi" class="Market_sys" method="queryQianLi_FenXi">
+    		<result name="default">/jsp/Market/qianLi_FenXi.jsp</result>
+    	</action>
+    	
+    	<action name="saveQianLi_FenXi" class="Market_sys" method="saveQianLi_FenXi">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	<!--   有效性分析  -->
+    	<action name="queryYouXiaoXing_FenXi" class="Market_sys" method="queryYouXiaoXing_FenXi">
+    		<result name="default">/jsp/Market/youXiaoXing_FenXi.jsp</result>
+    	</action>
+    	
+    	<action name="saveYouXiaoXing_FenXi" class="Market_sys" method="saveYouXiaoXing_FenXi">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	<!--   产出目标  -->
+    	<action name="queryChanChu_MuBiao" class="Market_sys" method="queryChanChu_MuBiao">
+    		<result name="default">/jsp/Market/chanChu_muBiao.jsp</result>
+    	</action>
+    	
+    	<action name="saveChanChu_MuBiao" class="Market_sys" method="saveChanChu_MuBiao">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	<!--   投入目标  -->
+    	<action name="queryTouRu_MuBiao" class="Market_sys" method="queryTouRu_MuBiao">
+    		<result name="default">/jsp/Market/touRu_MuBiao.jsp</result>
+    	</action>
+    	
+    	<action name="saveTouRu_MuBiao" class="Market_sys" method="saveTouRu_MuBiao">
+    	 	<result name="default">/message.jsp</result>
+    	</action>
+    	<!--    资源分配  -->
+    	<action name="queryZiYuan_FenPei" class="Market_sys" method="queryZiYuan_FenPei">
+    		<result name="default">/jsp/Market/ziYuan_FenPei_new.jsp</result>
+    	</action>
+    	
+    	<action name="saveZiYuan_FenPei" class="Market_sys" method="saveZiYuan_FenPei">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	
+    	<!--   行动计划  -->
+    	<action name="queryXingDong_JiHua" class="Market_sys" method="queryXingDong_JiHua">
+    		<result name="default">/jsp/Market/xingDong_JiHua.jsp</result>
+    	</action>
+    	
+    	<action name="saveXingDong_JiHua" class="Market_sys" method="saveXingDong_JiHua">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	<!--   月份预测 -->
+    	<action name="queryMonth_YuCe" class="Market_sys" method="queryMonth_YuCe">
+    		<result name="default">/jsp/static/month_yuce.jsp</result>
+    	</action>
+    	
+    	<action name="saveMonth_YuCe" class="Market_sys" method="saveMonth_YuCe">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	<!--   月份监控 -->
+    	<action name="queryYueFen_JianKong" class="Market_sys" method="queryYueFen_JianKong">
+    		<result name="default">/jsp/Market/yue_JianKong.jsp</result>
+    	</action>
+    	<action name="saveYueFen_JianKong" class="Market_sys" method="saveYueFen_JianKong">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	
+    	<!--   月份监控 -->
+    	<action name="queryNextYueFen_JianKong" class="Market_sys" method="queryNextYueFen_JianKong">
+    		<result name="default">/jsp/Market/yue_JianKong.jsp</result>
+    		
+    	</action>
+    	<action name="saveNextYueFen_JianKong" class="Market_sys" method="saveNextYueFen_JianKong">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	
+    	
+    	<action name="saveXingDongOrder" class="Market_sys" method="saveXingDongOrder">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    	
+    	
+    	<!--   月份预测 -->
+    	<action name="queryYue_YuCe" class="Market_sys" method="queryYue_YuCe">
+    		<result name="default">/jsp/Market/yue_yuce.jsp</result>
+    	</action>
+    	
+    	<action name="saveYue_YuCe" class="Market_sys" method="saveYue_YuCe">
+    	 	<result name="default">/message.jsp</result>
+    	</action> 
+    </package>
+</struts>
+

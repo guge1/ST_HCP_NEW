@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="common" location="0,0" size="0,0" />
+  <package name="jfreechart" location="0,0" size="0,0">
+    <action name="getPaoPao" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="struts2" location="0,0" size="0,0">
+    <action name="logon" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="main.jsp" />
+      </result>
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="login.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+    </action>
+    <action name="userExit" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="login.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+    </action>
+    <action name="save" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="success.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+    </action>
+    <action name="update" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="success.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="update.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+    </action>
+    <action name="delete" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="success.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+    </action>
+    <action name="show" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+    </action>
+    <action name="left" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="left.jsp" />
+      </result>
+    </action>
+    <action name="top" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="top.jsp" />
+      </result>
+    </action>
+    <action name="main" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="main.jsp" />
+      </result>
+    </action>
+    <action name="userBody" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="userBody.jsp" />
+      </result>
+    </action>
+    <action name="down" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="down.jsp" />
+      </result>
+    </action>
+    <action name="queryCase" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="caseList.jsp" />
+      </result>
+    </action>
+    <action name="insertCase" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="editCase" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="editCase.jsp" />
+      </result>
+    </action>
+    <action name="deleteCase" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="saveCase" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="updateCase" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="youXiaoXing_person" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="youXiaoXing_person.jsp" />
+      </result>
+    </action>
+    <action name="queryXiaoShouShuJu" location="0,0" size="0,0" />
+    <action name="queryXiaoShouYuGu" location="0,0" size="0,0" />
+    <action name="getPaoPao1" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="error.jsp" />
+      </result>
+    </action>
+    <action name="querySell_analysis" location="0,0" size="0,0" />
+    <action name="queryXiaoShouJieGuoStatic" location="0,0" size="0,0" />
+    <action name="queryQianLiStatic" location="0,0" size="0,0" />
+    <action name="getZongTiFenXiPaoPao" location="0,0" size="0,0" />
+    <action name="getMarketInfo" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="seller.jsp" />
+      </result>
+    </action>
+    <action name="getMarketInfo_1" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="sell_date.jsp" />
+      </result>
+    </action>
+    <action name="staticYouXiaoXing_FenXi" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="youXiaoXing_FenXi.jsp" />
+      </result>
+    </action>
+    <action name="staticZongTiFenXi_Tu" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="zongTiFenXi_Tu.jsp" />
+      </result>
+    </action>
+    <action name="saveZonti_FenXi_Tu" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="queryLeft" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="left.jsp" />
+      </result>
+    </action>
+    <action name="queryZiyuanInfo" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="ziyuan.jsp" />
+      </result>
+    </action>
+    <action name="saveSource" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="queryZhiBiaoInfo" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="zhiBiao_canShu.jsp" />
+      </result>
+    </action>
+    <action name="saveZhiBiao" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="getXingDongJiHuaList" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="XingDongList.jsp" />
+      </result>
+    </action>
+    <action name="queryZongTi_FenXi" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="zongTiFenXi.jsp" />
+      </result>
+    </action>
+    <action name="saveZongTi_FenXi" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="editBiaoZhun" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="editBiaoZhun.jsp" />
+      </result>
+    </action>
+    <action name="saveEditBiaoZhun" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="editHostory" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="editHostory.jsp" />
+      </result>
+    </action>
+    <action name="saveEditHostory" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="queryJieGuo_FenXi" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="jieGuo_FenXi.jsp" />
+      </result>
+    </action>
+    <action name="saveJieGuo_FenXi" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="queryQianLi_FenXi" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="qianLi_FenXi.jsp" />
+      </result>
+    </action>
+    <action name="saveQianLi_FenXi" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="queryYouXiaoXing_FenXi" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="youXiaoXing_FenXi.jsp" />
+      </result>
+    </action>
+    <action name="saveYouXiaoXing_FenXi" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="queryChanChu_MuBiao" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="chanChu_muBiao.jsp" />
+      </result>
+    </action>
+    <action name="saveChanChu_MuBiao" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="queryTouRu_MuBiao" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="touRu_MuBiao.jsp" />
+      </result>
+    </action>
+    <action name="saveTouRu_MuBiao" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="queryZiYuan_FenPei" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="ziYuan_FenPei.jsp" />
+      </result>
+    </action>
+    <action name="saveZiYuan_FenPei" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="queryXingDong_JiHua" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="xingDong_JiHua.jsp" />
+      </result>
+    </action>
+    <action name="saveXingDong_JiHua" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="queryMonth_YuCe" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="month_yuce.jsp" />
+      </result>
+    </action>
+    <action name="saveMonth_YuCe" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="queryYueFen_JianKong" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="yue_JianKong.jsp" />
+      </result>
+    </action>
+    <action name="saveYueFen_JianKong" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="queryNextYueFen_JianKong" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="yue_JianKong.jsp" />
+      </result>
+    </action>
+    <action name="saveNextYueFen_JianKong" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="saveXingDongOrder" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="queryYue_YuCe" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="yue_yuce.jsp" />
+      </result>
+    </action>
+    <action name="saveYue_YuCe" location="0,0" size="0,0">
+      <result name="default">
+        <resourceEdge source="default" routing="0" target="message.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="main.jsp" path="/jsp/web/main.jsp" location="0,0" size="0,0" />
+  <webResource name="login.jsp" path="/jsp/login/login.jsp" location="0,0" size="0,0" />
+  <webResource name="success.jsp" path="/success.jsp" location="0,0" size="0,0" />
+  <webResource name="error.jsp" path="/error.jsp" location="0,0" size="0,0" />
+  <webResource name="update.jsp" path="/update.jsp" location="0,0" size="0,0" />
+  <webResource name="list.jsp" path="/list.jsp" location="0,0" size="0,0" />
+  <webResource name="left.jsp" path="/jsp/web/left.jsp" location="0,0" size="0,0" />
+  <webResource name="top.jsp" path="/jsp/web/top.jsp" location="0,0" size="0,0" />
+  <webResource name="userBody.jsp" path="/jsp/web/userBody.jsp" location="0,0" size="0,0" />
+  <webResource name="down.jsp" path="/jsp/web/down.jsp" location="0,0" size="0,0" />
+  <webResource name="zongTiFenXi.jsp" path="/jsp/Market/zongTiFenXi.jsp" location="0,0" size="0,0" />
+  <webResource name="ziyuan.jsp" path="/jsp\Market\ziyuan.jsp" location="0,0" size="0,0" />
+  <webResource name="zhiBiao_canShu.jsp" path="/jsp\Market\zhiBiao_canShu.jsp" location="0,0" size="0,0" />
+  <webResource name="message.jsp" path="/message.jsp" location="0,0" size="0,0" />
+  <webResource name="jieGuo_FenXi.jsp" path="/jsp/Market/jieGuo_FenXi.jsp" location="0,0" size="0,0" />
+  <webResource name="qianLi_FenXi.jsp" path="/jsp/Market/qianLi_FenXi.jsp" location="0,0" size="0,0" />
+  <webResource name="youXiaoXing_FenXi.jsp" path="/jsp/Market/youXiaoXing_FenXi.jsp" location="0,0" size="0,0" />
+  <webResource name="chanChu_muBiao.jsp" path="/jsp/Market/chanChu_muBiao.jsp" location="0,0" size="0,0" />
+  <webResource name="touRu_MuBiao.jsp" path="/jsp/Market/touRu_MuBiao.jsp" location="0,0" size="0,0" />
+  <webResource name="xingDong_JiHua.jsp" path="/jsp/Market/xingDong_JiHua.jsp" location="0,0" size="0,0" />
+  <webResource name="ziYuan_FenPei.jsp" path="/jsp/Market/ziYuan_FenPei.jsp" location="0,0" size="0,0" />
+  <webResource name="XingDongList.jsp" path="/jsp\Market\XingDongList.jsp" location="0,0" size="0,0" />
+  <webResource name="month_yuce.jsp" path="/jsp/static/month_yuce.jsp" location="0,0" size="0,0" />
+  <webResource name="yue_JianKong.jsp" path="/jsp/Market/yue_JianKong.jsp" location="0,0" size="0,0" />
+  <webResource name="caseList.jsp" path="/jsp/web/tab/caseList.jsp" location="0,0" size="0,0" />
+  <webResource name="yue_yuce.jsp" path="/jsp/Market/yue_yuce.jsp" location="0,0" size="0,0" />
+  <webResource name="youXiaoXing_person.jsp" path="/jsp/Market/youXiaoXing_person.jsp" location="0,0" size="0,0" />
+  <webResource name="editCase.jsp" path="/jsp/web/tab/editCase.jsp" location="0,0" size="0,0" />
+  <webResource name="seller.jsp" path="/jsp/Market/seller.jsp" location="0,0" size="0,0" />
+  <webResource name="sell_date.jsp" path="/jsp/static/sell_date.jsp" location="0,0" size="0,0" />
+  <webResource name="youXiaoXing_FenXi.jsp" path="/jsp/static/youXiaoXing_FenXi.jsp" location="0,0" size="0,0" />
+  <webResource name="zongTiFenXi_Tu.jsp" path="/jsp/static/zongTiFenXi_Tu.jsp" location="0,0" size="0,0" />
+  <webResource name="editHostory.jsp" path="/jsp/Market/editHostory.jsp" location="0,0" size="0,0" />
+  <webResource name="editBiaoZhun.jsp" path="/jsp/Market/editBiaoZhun.jsp" location="0,0" size="0,0" />
+  <include file="struts-default.xml" location="0,0" size="0,0" />
+  <include file="chart-struts.xml" location="0,0" size="0,0" />
+</Struts2Diagram>
+

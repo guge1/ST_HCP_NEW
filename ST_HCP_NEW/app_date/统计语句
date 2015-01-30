@@ -1,0 +1,25 @@
+select s.CASEID, s.USERID, SUM( CAST( s.result as int)) /SUM( CAST( s.COMPANYKPI as int))*100   
+from (select  u.* from   n_market_user  u    where  1=1  ) u 
+left  join   N_MARKETANALYSIS  s  on  u.MASTERID=s.MARKETID    
+ and s.YEAR='2012'  and s.MONTH='1'    
+ and  s.caseid  in(select c.CASEID from N_MARKETCASE c where c.CASETYPE='1' and c.YEAR='2012'  and c.MONTH='1' ) 
+ and s.USERID is not null
+ group by s.USERID,s.CASEID
+  /*='10324'   */
+  
+  
+  
+  select   s.caseid,s.MARKETID,
+convert(numeric(12,1),round(SUM( CAST( s.result as float)) /SUM( CAST( s.COMPANYKPI as float))*100,1))ZDCL   
+from     N_MARKETANALYSIS  s    where 1=1
+ and s.YEAR='2012'  and s.MONTH='1'    
+/*  and  s.caseid  in(select c.CASEID from N_MARKETCASE c where c.CASETYPE='1' and c.YEAR='2012'  and c.MONTH='1' ) 
+*/  
+  and s.USERID is not null 
+ and  s.caseid='10324' 
+  group by s.MARKETID,s.caseid;
+  
+  select  convert(numeric(12,2),round(123456.12345,2)) ,c.* from N_MARKETCASE c where  c.caseid='10324' ;
+  select s.*,  s.caseid,s.USERID   
+from     N_MARKETANALYSIS  s  where s.caseid='10324' 
+    

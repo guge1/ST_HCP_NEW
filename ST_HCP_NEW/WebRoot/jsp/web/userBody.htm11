@@ -1,0 +1,339 @@
+<html >
+	<head id="Head1">
+		<title>主要页面</title>
+		<base target="_self" />
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<script language="javascript" type="text/javascript"
+			src="js/WinOpen.js">
+</script>
+		<link href="../style_dark/StyleSheet.css" rel="stylesheet"
+			type="text/css" />
+		<link href="../style_dark/styleform.css" rel="stylesheet"
+			type="text/css" />
+		<style type="text/css">
+.tbDragTable tr {
+	text-align: center;
+	height: 35px;
+}
+
+.tbInfo {
+	background-color: White;
+	font-weight: bold;
+	height: 20px;
+	font-size: 12px;
+}
+</style>
+	</head>
+	<body style="margin-top: 0; padding-top: 0;">
+		<form name="form1" method="post" id="form1">
+			<div style="width: 100%; text-align: center; padding-top: 10px;">
+				<table width="884px;" border="0" cellspacing="0" cellpadding="0"
+					style="border: 1px solid red;">
+					<tr>
+						<td height="170" valign="bottom"
+							style="width: 285px; height: 175px; cursor: hand"
+							onmouseover=" this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#adb9c2'; "
+							onmouseout="  this.style.borderStyle='none'" valign="top">
+							<div
+								style="background-image: url(images/toux1.png); width: 100%; height: 100%">
+								<div
+									style="height: 165px; width: 175px; text-align: left; padding-left: 110px; padding-top: 10px; color: #81402e;">
+									<span style="font-size: 16px; font-weight: bold;">&nbsp;
+										王强</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">业绩评估：</span><span
+										style="font-size: 12px;">到目前为止没有做过TA的业务评估</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">整体评价：</span><span
+										style="font-size: 12px;">TA应该尝试下业绩管理提供的工具</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">目前销售额：
+									</span><span style="font-size: 12px;"> 98000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">增长率：</span><span
+										style="font-size: 12px;">10%</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">公司销售目标：
+									</span><span style="font-size: 12px;"> 100000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">销售额VS销售目标：</span><span
+										style="font-size: 12px;">89%</span>
+									<br />
+								</div>
+							</div>
+						</td>
+						<td style="width: 10px">
+						</td>
+						<td height="170" valign="bottom"
+							style="width: 285px; height: 175px; cursor: hand"
+							onmouseover=" this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#adb9c2'; "
+							onmouseout="  this.style.borderStyle='none'" valign="top">
+							<div
+								style="background-image: url(images/toux2.png); width: 100%; height: 100%">
+								<div
+									style="height: 165px; width: 175px; text-align: left; padding-left: 110px; padding-top: 10px; color: #81402e;">
+									<span style="font-size: 16px; font-weight: bold;">&nbsp;
+										陈中兴</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">业绩评估：</span><span
+										style="font-size: 12px;">到目前为止没有做过TA的业务评估</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">整体评价：</span><span
+										style="font-size: 12px;">TA应该尝试下业绩管理提供的工具</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">目前销售额：
+									</span><span style="font-size: 12px;"> 98000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">增长率：</span><span
+										style="font-size: 12px;">10%</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">公司销售目标：
+									</span><span style="font-size: 12px;"> 100000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">销售额VS销售目标：</span><span
+										style="font-size: 12px;">89%</span>
+									<br />
+								</div>
+							</div>
+						</td>
+						<td style="width: 10px">
+						</td>
+						<td height="170" valign="bottom"
+							style="width: 285px; height: 175px; cursor: hand"
+							onmouseover=" this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#adb9c2'; "
+							onmouseout="  this.style.borderStyle='none'" valign="top">
+							<div
+								style="background-image: url(images/toux3.png); width: 100%; height: 100%">
+								<div
+									style="height: 165px; width: 175px; text-align: left; padding-left: 110px; padding-top: 10px; color: #81402e;">
+									<span style="font-size: 16px; font-weight: bold;">&nbsp;李德胜</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">业绩评估：</span><span
+										style="font-size: 12px;">到目前为止没有做过TA的业务评估</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">整体评价：</span><span
+										style="font-size: 12px;">TA应该尝试下业绩管理提供的工具</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">目前销售额：
+									</span><span style="font-size: 12px;"> 98000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">增长率：</span><span
+										style="font-size: 12px;">10%</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">公司销售目标：
+									</span><span style="font-size: 12px;"> 100000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">销售额VS销售目标：</span><span
+										style="font-size: 12px;">89%</span>
+									<br />
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr style="height: 5px">
+						<td colspan="5"></td>
+					</tr>
+					<tr>
+						<td height="170" valign="bottom"
+							style="width: 285px; height: 175px; cursor: hand"
+							onmouseover=" this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#adb9c2'; "
+							onmouseout="  this.style.borderStyle='none'" valign="top">
+							<div
+								style="background-image: url(images/toux4.png); width: 100%; height: 100%">
+								<div
+									style="height: 165px; width: 175px; text-align: left; padding-left: 110px; padding-top: 10px; color: #81402e;">
+									<span style="font-size: 16px; font-weight: bold;">&nbsp;
+										郑娜娜</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">业绩评估：</span><span
+										style="font-size: 12px;">到目前为止没有做过TA的业务评估</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">整体评价：</span><span
+										style="font-size: 12px;">TA应该尝试下业绩管理提供的工具</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">目前销售额：
+									</span><span style="font-size: 12px;"> 98000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">增长率：</span><span
+										style="font-size: 12px;">10%</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">公司销售目标：
+									</span><span style="font-size: 12px;"> 100000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">销售额VS销售目标：</span><span
+										style="font-size: 12px;">89%</span>
+									<br />
+								</div>
+							</div>
+						</td>
+						<td style="width: 10px">
+						</td>
+						<td height="170" valign="bottom"
+							style="width: 285px; height: 175px; cursor: hand"
+							onmouseover=" this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#adb9c2'; "
+							onmouseout="  this.style.borderStyle='none'" valign="top">
+							<div
+								style="background-image: url(images/toux5.png); width: 100%; height: 100%">
+								<div
+									style="height: 165px; width: 175px; text-align: left; padding-left: 110px; padding-top: 10px; color: #81402e;">
+									<span style="font-size: 16px; font-weight: bold;">&nbsp;
+										吴丽琼</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">业绩评估：</span><span
+										style="font-size: 12px;">到目前为止没有做过TA的业务评估</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">整体评价：</span><span
+										style="font-size: 12px;">TA应该尝试下业绩管理提供的工具</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">目前销售额：
+									</span><span style="font-size: 12px;"> 98000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">增长率：</span><span
+										style="font-size: 12px;">10%</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">公司销售目标：
+									</span><span style="font-size: 12px;"> 100000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">销售额VS销售目标：</span><span
+										style="font-size: 12px;">89%</span>
+									<br />
+								</div>
+							</div>
+						</td>
+						<td style="width: 10px">
+						</td>
+						<td height="170" valign="bottom"
+							style="width: 285px; height: 175px; cursor: hand"
+							onmouseover=" this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#adb9c2'; "
+							onmouseout="  this.style.borderStyle='none'" valign="top">
+							<div
+								style="background-image: url(images/toux6.png); width: 100%; height: 100%">
+								<div
+									style="height: 165px; width: 175px; text-align: left; padding-left: 110px; padding-top: 10px; color: #81402e;">
+									<span style="font-size: 16px; font-weight: bold;">&nbsp;
+										赵师师</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">业绩评估：</span><span
+										style="font-size: 12px;">到目前为止没有做过TA的业务评估</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">整体评价：</span><span
+										style="font-size: 12px;">TA应该尝试下业绩管理提供的工具</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">目前销售额：
+									</span><span style="font-size: 12px;"> 98000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">增长率：</span><span
+										style="font-size: 12px;">10%</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">公司销售目标：
+									</span><span style="font-size: 12px;"> 100000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">销售额VS销售目标：</span><span
+										style="font-size: 12px;">89%</span>
+									<br />
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr style="height: 5px">
+						<td colspan="5"></td>
+					</tr>
+
+					<tr>
+						<td height="170" valign="bottom"
+							style="width: 285px; height: 175px; cursor: hand"
+							onmouseover=" this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#adb9c2'; "
+							onmouseout="  this.style.borderStyle='none'" valign="top">
+							<div
+								style="background-image: url(images/toux1.png); width: 100%; height: 100%">
+								<div
+									style="height: 165px; width: 175px; text-align: left; padding-left: 110px; padding-top: 10px; color: #81402e;">
+									<span style="font-size: 16px; font-weight: bold;">&nbsp;
+										肖雪丽</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">业绩评估：</span><span
+										style="font-size: 12px;">到目前为止没有做过TA的业务评估</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">整体评价：</span><span
+										style="font-size: 12px;">TA应该尝试下业绩管理提供的工具</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">目前销售额：
+									</span><span style="font-size: 12px;"> 98000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">增长率：</span><span
+										style="font-size: 12px;">10%</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">公司销售目标：
+									</span><span style="font-size: 12px;"> 100000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">销售额VS销售目标：</span><span
+										style="font-size: 12px;">89%</span>
+									<br />
+								</div>
+							</div>
+						</td>
+						<td style="width: 10px">
+						</td>
+						<td height="170" valign="bottom"
+							style="width: 285px; height: 175px; cursor: hand"
+							onmouseover=" this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#adb9c2'; "
+							onmouseout="  this.style.borderStyle='none'" valign="top">
+							<div
+								style="background-image: url(images/toux2.png); width: 100%; height: 100%">
+								<div
+									style="height: 165px; width: 175px; text-align: left; padding-left: 110px; padding-top: 10px; color: #81402e;">
+									<span style="font-size: 16px; font-weight: bold;">&nbsp;
+										毛黎明</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">业绩评估：</span><span
+										style="font-size: 12px;">到目前为止没有做过TA的业务评估</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">整体评价：</span><span
+										style="font-size: 12px;">TA应该尝试下业绩管理提供的工具</span>
+									<br />
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">目前销售额：
+									</span><span style="font-size: 12px;"> 98000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">增长率：</span><span
+										style="font-size: 12px;">10%</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">公司销售目标：
+									</span><span style="font-size: 12px;"> 100000元/月</span>
+									<br />
+									<span style="font-size: 12px; font-weight: bold;">销售额VS销售目标：</span><span
+										style="font-size: 12px;">89%</span>
+									<br />
+								</div>
+							</div>
+						</td>
+						<td style="width: 10px">
+						</td>
+						<td height="170" valign="bottom"
+							style="width: 285px; height: 175px; cursor: hand"
+							onmouseover=" this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#adb9c2'; "
+							onmouseout="  this.style.borderStyle='none'" valign="top">
+
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</body>
+</html>

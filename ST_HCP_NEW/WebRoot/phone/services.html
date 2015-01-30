@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale = 1.0" />
+<meta name="author" content="FamousThemes" />
+<meta name="description" content="Get in the spotlight" />
+<meta name="keywords" content="premium css templates, premium wordpress themes, famous themes, themeforest" />
+<title>My mobile page V2</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    var $ = jQuery.noConflict();
+	$(function() {
+		$('#activator').click(function(){
+				$('#box').animate({'top':'65px'},500);
+		});
+		$('#boxclose').click(function(){
+				$('#box').animate({'top':'-400px'},500);
+		});
+		$('#activator_share').click(function(){
+				$('#box_share').animate({'top':'65px'},500);
+		});
+		$('#boxclose_share').click(function(){
+				$('#box_share').animate({'top':'-400px'},500);
+		});
+
+	});
+	$(document).ready(function(){
+	$(".toggle_container").hide(); 
+	$(".trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("slow");
+		return false;
+	});
+	
+	});
+</script>
+<!-- Hide Mobiles Browser Navigation Bar -->
+<script type="text/javascript">
+	window.addEventListener("load",function() {
+	// Set a timeout...
+	setTimeout(function(){
+	// Hide the address bar!
+	window.scrollTo(0, 1);
+	}, 0);
+	});
+</script>
+</head>
+
+<body>
+<div id="main_container">
+	<div class="header">
+    <a href="index.html" class="left_bt">首页</a>
+    <span>服务项目</span>
+    <a href="#" class="right_bt" id="activator"><img src="images/search.png" alt="" title="" border="0" /></a>
+    </div>
+    
+        <div class="box" id="box">
+        	<div class="box_content">
+            
+            	<div class="box_content_tab">
+                搜索
+                </div>
+                
+                <div class="box_content_center">
+                <div class="form_content">
+                <form>
+                <input type="text" class="form_input_box" />
+                <a class="boxclose" id="boxclose">关闭</a>
+                <input type="submit" class="form_submit" value="提交" />
+                </form>
+                </div> 
+                
+                <div class="clear"></div>
+                </div>
+            
+           </div>
+        </div>
+
+        <div class="box" id="box_share">
+        	<div class="box_content">
+            	<div class="box_content_tab">
+                分享
+                </div>
+                <div class="box_content_center">
+                
+                        <div class="social_share">
+                        <ul>
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_tsina"></a>
+<a class="bds_qzone"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=12770" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+                        </ul>
+                        </div>
+            
+                <a class="boxclose_right" id="boxclose_share">关闭</a>
+                <div class="clear"></div>
+                
+                </div>
+           </div>
+        </div>
+        
+	<div class="content">
+    	
+    	<div class="corner_wrap">
+
+            
+            <div class="entry">
+                   <br />    
+            <div class="services_content">
+            <h6>客户为先</h6>
+            <p>尊重所有客户，随时随地维护富图视觉形象； 
+微笑面对投诉，积极主动的为客户解决问题； 
+与客户交流过程中，即使不是自己的责任，也不推诿； 
+站在客户的立场思考问题，在坚持原则的基础上，最终达到客户和公司的满意。 </p>
+            </div>
+            <div class="services_content">
+            <h6>正直诚信</h6>
+            <p>做人德为先，正直是根本； 
+保持公正、正义、诚实、坦诚、守信； 
+敢于承担责任，勇于承认错误；客观反映问题，以作好工作、服务好客户和维护公司利益为己任； 
+尊重自己，尊重他人，尊重客观规律，尊重公司制度，从而自爱自强。 </p>
+            </div>
+            <div class="services_content">
+            <h6>充满激情</h6>
+            <p>认同富图视觉企业文化，具备强烈的主人翁意识，热爱自己的岗位； 
+热爱富图视觉，顾全大局，不计较个人得失； </p>
+            </div>
+            <div class="services_content">
+            <h6>协作敬业</h6>
+            <p>团队优秀才能真正成就个人的优秀，在工作中主动配合，查漏补缺； 
+积极主动，重视整体利益，从而创造优秀的团队绩效； 
+放眼长远，胸襟开阔，不断追求优秀的协作境界；</p>
+            </div>
+            <div class="services_content">
+            <h6>服务项目</h6>
+            <p>持续学习，自我完善，具备充分的责任心，以结果为导向； 
+能根据轻重缓急来正确安排工作，做正确的事。</p>
+            </div>
+                
+            </div>         
+
+      
+        </div>
+        <div class="shadow_wrap"></div>
+   		<div class="clear_left"></div>
+
+    </div>
+
+
+</div>
+<div id="footer">
+<a href="#" class="left_bt" id="activator_share">分享</a>
+<span>17素材网  www.17sucai.com  分享社区</span>
+<a onclick="jQuery('html, body').animate( { scrollTop: 0 }, 'slow' );"  href="javascript:void(0);" title="Go on top" class="right_bt"><img src="images/top.png" alt="" title="" border="0" /></a>
+</div>
+</body>
+</html>

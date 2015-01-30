@@ -1,0 +1,66 @@
+
+
+
+
+.login_top
+{
+	  background:url(../images/login_top.gif) 0 0 repeat-x #D3F0F0; 
+	  width: 100%;
+	  height: 33px;
+      position:relative;    
+      margin:0 auto;    
+      clear:both;    
+ 
+}
+.login_body
+{
+	  background:url(../images/login_body.gif) 0 0 ; 
+	  width: 968px;
+	  height: 540px;
+      position:relative;    
+      margin:0 auto;    
+      clear:both;    
+      text-align:center;
+ 
+}
+.login_back
+{
+	  background:url(../images/login_back.gif) 0 0 ; 
+	  width: 261;
+	  height: 125;
+      position:relative;    
+      margin:0 auto;    
+      clear:both;    
+ 
+}
+.login_btn
+{
+	  background:url(../images/login_btn.gif) 0 0 ; 
+	  width: 25;
+	  height: 25;
+      position:relative;    
+      margin:0 auto;    
+      clear:both;    
+ 
+}
+.login_font
+{
+	 font-size:14px;;
+	 font-weight:bold;
+	}
+	
+.loginButton
+{ 
+	width: 41px;
+	height: 23px;
+	border-width: 0px;
+	padding-top: 3px;
+}
+.loginResetButton
+{ 
+	width: 41px;
+	height: 23px;
+	border-width: 0px;
+	padding-top: 3px;
+
+}

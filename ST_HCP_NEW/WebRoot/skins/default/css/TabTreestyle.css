@@ -1,0 +1,65 @@
+ 
+ 
+
+.bd
+{
+	FILTER: progid:DXImageTransform.Microsoft.Shadow(direction=135,color=#999999,strength=3);
+}
+.tleft
+{
+	background-image: url('TableImg/tab1.gif');
+}
+.tright
+{
+	background-image: url('TableImg/tab3.gif');
+}
+.ttop
+{
+	background-image: url('TableImg/tab2.gif');
+}
+.ttop_over
+{
+	background-image: url('TableImg/tab8.gif');
+}
+.tbottom
+{
+	background-image: url('TableImg/tab4.gif');
+}
+.tbottom2
+{
+	background-image: url('TableImg/tab6.gif');
+}
+.tbottom3
+{
+	background-image: url('TableImg/tab7.gif');
+	border-bottom: 1px #000000 solid;
+}
+.getfouce
+{
+	cursor: default;
+	text-indent: 6px;
+	font-size: 12px;
+	background-color: #ffffff;
+	color:#000000;
+	FONT-FAMILY: "ËÎÌו";
+	font-weight:bold
+}
+.lostfouce
+{
+	text-indent: 6px;
+	font-size: 12px;
+	background-image: url('TableImg/tab5.gif');
+	border-bottom: 1px #000000 solid;
+	cursor: hand;
+	color:#555555;
+	FONT-FAMILY: "ËÎÌו";
+	padding-top:4px
+}
+.lostfouce_over
+{
+	text-indent: 6px;
+	font-size: 12px;
+	cursor: hand;
+	background-image: url('TableImg/tab9.gif');
+	border-bottom: 1px #000000 solid;
+}
